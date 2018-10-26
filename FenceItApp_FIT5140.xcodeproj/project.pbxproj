@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7208F992183396C004E90E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208F982183396C004E90E9 /* AppDelegate.swift */; };
+		C7208F9B2183396C004E90E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208F9A2183396C004E90E9 /* ViewController.swift */; };
+		C7208F9E2183396C004E90E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7208F9C2183396C004E90E9 /* Main.storyboard */; };
+		C7208FA021833975004E90E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7208F9F21833975004E90E9 /* Assets.xcassets */; };
+		C7208FA321833975004E90E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7208FA121833975004E90E9 /* LaunchScreen.storyboard */; };
+		C7208FAE21833975004E90E9 /* FenceItApp_FIT5140Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208FAD21833975004E90E9 /* FenceItApp_FIT5140Tests.swift */; };
+		C7208FB921833975004E90E9 /* FenceItApp_FIT5140UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208FB821833975004E90E9 /* FenceItApp_FIT5140UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7208FAA21833975004E90E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7208F8D2183396C004E90E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7208F942183396C004E90E9;
+			remoteInfo = FenceItApp_FIT5140;
+		};
+		C7208FB521833975004E90E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7208F8D2183396C004E90E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7208F942183396C004E90E9;
+			remoteInfo = FenceItApp_FIT5140;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7208F952183396C004E90E9 /* FenceItApp_FIT5140.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenceItApp_FIT5140.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7208F982183396C004E90E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7208F9A2183396C004E90E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7208F9D2183396C004E90E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7208F9F21833975004E90E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7208FA221833975004E90E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7208FA421833975004E90E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7208FA921833975004E90E9 /* FenceItApp_FIT5140Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenceItApp_FIT5140Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7208FAD21833975004E90E9 /* FenceItApp_FIT5140Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenceItApp_FIT5140Tests.swift; sourceTree = "<group>"; };
+		C7208FAF21833975004E90E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7208FB421833975004E90E9 /* FenceItApp_FIT5140UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenceItApp_FIT5140UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7208FB821833975004E90E9 /* FenceItApp_FIT5140UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenceItApp_FIT5140UITests.swift; sourceTree = "<group>"; };
+		C7208FBA21833975004E90E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7208F922183396C004E90E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FA621833975004E90E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FB121833975004E90E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7208F8C2183396C004E90E9 = {
+			isa = PBXGroup;
+			children = (
+				C7208F972183396C004E90E9 /* FenceItApp_FIT5140 */,
+				C7208FAC21833975004E90E9 /* FenceItApp_FIT5140Tests */,
+				C7208FB721833975004E90E9 /* FenceItApp_FIT5140UITests */,
+				C7208F962183396C004E90E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7208F962183396C004E90E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7208F952183396C004E90E9 /* FenceItApp_FIT5140.app */,
+				C7208FA921833975004E90E9 /* FenceItApp_FIT5140Tests.xctest */,
+				C7208FB421833975004E90E9 /* FenceItApp_FIT5140UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7208F972183396C004E90E9 /* FenceItApp_FIT5140 */ = {
+			isa = PBXGroup;
+			children = (
+				C7208F982183396C004E90E9 /* AppDelegate.swift */,
+				C7208F9A2183396C004E90E9 /* ViewController.swift */,
+				C7208F9C2183396C004E90E9 /* Main.storyboard */,
+				C7208F9F21833975004E90E9 /* Assets.xcassets */,
+				C7208FA121833975004E90E9 /* LaunchScreen.storyboard */,
+				C7208FA421833975004E90E9 /* Info.plist */,
+			);
+			path = FenceItApp_FIT5140;
+			sourceTree = "<group>";
+		};
+		C7208FAC21833975004E90E9 /* FenceItApp_FIT5140Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C7208FAD21833975004E90E9 /* FenceItApp_FIT5140Tests.swift */,
+				C7208FAF21833975004E90E9 /* Info.plist */,
+			);
+			path = FenceItApp_FIT5140Tests;
+			sourceTree = "<group>";
+		};
+		C7208FB721833975004E90E9 /* FenceItApp_FIT5140UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7208FB821833975004E90E9 /* FenceItApp_FIT5140UITests.swift */,
+				C7208FBA21833975004E90E9 /* Info.plist */,
+			);
+			path = FenceItApp_FIT5140UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7208F942183396C004E90E9 /* FenceItApp_FIT5140 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7208FBD21833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140" */;
+			buildPhases = (
+				C7208F912183396C004E90E9 /* Sources */,
+				C7208F922183396C004E90E9 /* Frameworks */,
+				C7208F932183396C004E90E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FenceItApp_FIT5140;
+			productName = FenceItApp_FIT5140;
+			productReference = C7208F952183396C004E90E9 /* FenceItApp_FIT5140.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7208FA821833975004E90E9 /* FenceItApp_FIT5140Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7208FC021833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140Tests" */;
+			buildPhases = (
+				C7208FA521833975004E90E9 /* Sources */,
+				C7208FA621833975004E90E9 /* Frameworks */,
+				C7208FA721833975004E90E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7208FAB21833975004E90E9 /* PBXTargetDependency */,
+			);
+			name = FenceItApp_FIT5140Tests;
+			productName = FenceItApp_FIT5140Tests;
+			productReference = C7208FA921833975004E90E9 /* FenceItApp_FIT5140Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7208FB321833975004E90E9 /* FenceItApp_FIT5140UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7208FC321833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140UITests" */;
+			buildPhases = (
+				C7208FB021833975004E90E9 /* Sources */,
+				C7208FB121833975004E90E9 /* Frameworks */,
+				C7208FB221833975004E90E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7208FB621833975004E90E9 /* PBXTargetDependency */,
+			);
+			name = FenceItApp_FIT5140UITests;
+			productName = FenceItApp_FIT5140UITests;
+			productReference = C7208FB421833975004E90E9 /* FenceItApp_FIT5140UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7208F8D2183396C004E90E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Alfredo Zamudio";
+				TargetAttributes = {
+					C7208F942183396C004E90E9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					C7208FA821833975004E90E9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = C7208F942183396C004E90E9;
+					};
+					C7208FB321833975004E90E9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = C7208F942183396C004E90E9;
+					};
+				};
+			};
+			buildConfigurationList = C7208F902183396C004E90E9 /* Build configuration list for PBXProject "FenceItApp_FIT5140" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7208F8C2183396C004E90E9;
+			productRefGroup = C7208F962183396C004E90E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7208F942183396C004E90E9 /* FenceItApp_FIT5140 */,
+				C7208FA821833975004E90E9 /* FenceItApp_FIT5140Tests */,
+				C7208FB321833975004E90E9 /* FenceItApp_FIT5140UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7208F932183396C004E90E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7208FA321833975004E90E9 /* LaunchScreen.storyboard in Resources */,
+				C7208FA021833975004E90E9 /* Assets.xcassets in Resources */,
+				C7208F9E2183396C004E90E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FA721833975004E90E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FB221833975004E90E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7208F912183396C004E90E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7208F9B2183396C004E90E9 /* ViewController.swift in Sources */,
+				C7208F992183396C004E90E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FA521833975004E90E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7208FAE21833975004E90E9 /* FenceItApp_FIT5140Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7208FB021833975004E90E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7208FB921833975004E90E9 /* FenceItApp_FIT5140UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7208FAB21833975004E90E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7208F942183396C004E90E9 /* FenceItApp_FIT5140 */;
+			targetProxy = C7208FAA21833975004E90E9 /* PBXContainerItemProxy */;
+		};
+		C7208FB621833975004E90E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7208F942183396C004E90E9 /* FenceItApp_FIT5140 */;
+			targetProxy = C7208FB521833975004E90E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7208F9C2183396C004E90E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7208F9D2183396C004E90E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7208FA121833975004E90E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7208FA221833975004E90E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7208FBB21833975004E90E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7208FBC21833975004E90E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7208FBE21833975004E90E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C7208FBF21833975004E90E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C7208FC121833975004E90E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenceItApp_FIT5140.app/FenceItApp_FIT5140";
+			};
+			name = Debug;
+		};
+		C7208FC221833975004E90E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FenceItApp_FIT5140.app/FenceItApp_FIT5140";
+			};
+			name = Release;
+		};
+		C7208FC421833975004E90E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenceItApp_FIT5140;
+			};
+			name = Debug;
+		};
+		C7208FC521833975004E90E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GL38CYJQKT;
+				INFOPLIST_FILE = FenceItApp_FIT5140UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Monash.FenceItApp-FIT5140UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FenceItApp_FIT5140;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7208F902183396C004E90E9 /* Build configuration list for PBXProject "FenceItApp_FIT5140" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7208FBB21833975004E90E9 /* Debug */,
+				C7208FBC21833975004E90E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7208FBD21833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7208FBE21833975004E90E9 /* Debug */,
+				C7208FBF21833975004E90E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7208FC021833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7208FC121833975004E90E9 /* Debug */,
+				C7208FC221833975004E90E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7208FC321833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7208FC421833975004E90E9 /* Debug */,
+				C7208FC521833975004E90E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7208F8D2183396C004E90E9 /* Project object */;
+}
