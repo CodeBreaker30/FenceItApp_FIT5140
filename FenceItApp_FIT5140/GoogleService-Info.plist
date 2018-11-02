@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>771688176671-o1ffcn1q2ih02sq970thga3dbutg4e3c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.771688176671-o1ffcn1q2ih02sq970thga3dbutg4e3c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCqPD0QIGDz9_Id_qS4cia9ABoYnDxm2Y4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>771688176671</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Monash.FenceItApp-FIT5140</string>
+	<key>PROJECT_ID</key>
+	<string>fenceitapp-db</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fenceitapp-db.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:771688176671:ios:5ae1775d68d6c65c</string>
+	<key>DATABASE_URL</key>
+	<string>https://fenceitapp-db.firebaseio.com</string>
+</dict>
+</plist>

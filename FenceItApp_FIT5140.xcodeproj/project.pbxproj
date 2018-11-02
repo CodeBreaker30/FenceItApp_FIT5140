@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46CFB80E354C0A61CFB27879 /* Pods_FenceItApp_FIT5140Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955DD2B1C1A20AE283F386AC /* Pods_FenceItApp_FIT5140Tests.framework */; };
+		5BC7DC9EABE3DBA8545C5758 /* Pods_FenceItApp_FIT5140.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B7DA9AD34B09E5767CDE9F /* Pods_FenceItApp_FIT5140.framework */; };
+		C70C3673218BA00000F6FCDC /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C3672218BA00000F6FCDC /* SettingsTableController.swift */; };
+		C70C3675218BB54500F6FCDC /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C3674218BB54500F6FCDC /* AlertTableViewController.swift */; };
+		C70C367A218BD3C000F6FCDC /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C3678218BD3C000F6FCDC /* SwitchTableViewCell.swift */; };
+		C70C367B218BD3C100F6FCDC /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70C3679218BD3C000F6FCDC /* SwitchTableViewCell.xib */; };
+		C71B100D218AEB1100608AC8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B100C218AEB1100608AC8 /* AuthViewController.swift */; };
 		C7208F992183396C004E90E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208F982183396C004E90E9 /* AppDelegate.swift */; };
-		C7208F9B2183396C004E90E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208F9A2183396C004E90E9 /* ViewController.swift */; };
 		C7208F9E2183396C004E90E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7208F9C2183396C004E90E9 /* Main.storyboard */; };
 		C7208FA021833975004E90E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7208F9F21833975004E90E9 /* Assets.xcassets */; };
 		C7208FA321833975004E90E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7208FA121833975004E90E9 /* LaunchScreen.storyboard */; };
 		C7208FAE21833975004E90E9 /* FenceItApp_FIT5140Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208FAD21833975004E90E9 /* FenceItApp_FIT5140Tests.swift */; };
 		C7208FB921833975004E90E9 /* FenceItApp_FIT5140UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208FB821833975004E90E9 /* FenceItApp_FIT5140UITests.swift */; };
+		C76CFD90218AFE5700C7D60B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76CFD8F218AFE5700C7D60B /* AlertViewController.swift */; };
+		C76CFD92218B01CE00C7D60B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76CFD91218B01CE00C7D60B /* Alert.swift */; };
+		C76CFD94218B208100C7D60B /* DetailAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76CFD93218B208100C7D60B /* DetailAlertController.swift */; };
+		C7EEB477218A66380094412F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7EEB476218A662F0094412F /* GoogleService-Info.plist */; };
+		D0D72342F9FBBC03CF7DDFB0 /* Pods_FenceItApp_FIT5140UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A178CA24E22EFD6BE63A7863 /* Pods_FenceItApp_FIT5140UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BAC1CE99A1FEB04FF38D685 /* Pods-FenceItApp_FIT5140UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140UITests/Pods-FenceItApp_FIT5140UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CB338A10553B5696993A5BD /* Pods-FenceItApp_FIT5140Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140Tests/Pods-FenceItApp_FIT5140Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0FEA7B7BADD1E46570C59686 /* Pods-FenceItApp_FIT5140Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140Tests/Pods-FenceItApp_FIT5140Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		30B7DA9AD34B09E5767CDE9F /* Pods_FenceItApp_FIT5140.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenceItApp_FIT5140.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F40F5C31F4032BC35D82C2 /* Pods-FenceItApp_FIT5140UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140UITests/Pods-FenceItApp_FIT5140UITests.release.xcconfig"; sourceTree = "<group>"; };
+		808967F47818135E7DC09F43 /* Pods-FenceItApp_FIT5140.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140.release.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140/Pods-FenceItApp_FIT5140.release.xcconfig"; sourceTree = "<group>"; };
+		955DD2B1C1A20AE283F386AC /* Pods_FenceItApp_FIT5140Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenceItApp_FIT5140Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A178CA24E22EFD6BE63A7863 /* Pods_FenceItApp_FIT5140UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FenceItApp_FIT5140UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81948092FCB7686C6F3225F /* Pods-FenceItApp_FIT5140.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FenceItApp_FIT5140.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FenceItApp_FIT5140/Pods-FenceItApp_FIT5140.debug.xcconfig"; sourceTree = "<group>"; };
+		C70C3672218BA00000F6FCDC /* SettingsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableController.swift; sourceTree = "<group>"; };
+		C70C3674218BB54500F6FCDC /* AlertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
+		C70C3678218BD3C000F6FCDC /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		C70C3679218BD3C000F6FCDC /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		C71B100C218AEB1100608AC8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C7208F952183396C004E90E9 /* FenceItApp_FIT5140.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenceItApp_FIT5140.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7208F982183396C004E90E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7208F9A2183396C004E90E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7208F9D2183396C004E90E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7208F9F21833975004E90E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7208FA221833975004E90E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,10 @@
 		C7208FB421833975004E90E9 /* FenceItApp_FIT5140UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FenceItApp_FIT5140UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7208FB821833975004E90E9 /* FenceItApp_FIT5140UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FenceItApp_FIT5140UITests.swift; sourceTree = "<group>"; };
 		C7208FBA21833975004E90E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76CFD8F218AFE5700C7D60B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		C76CFD91218B01CE00C7D60B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C76CFD93218B208100C7D60B /* DetailAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlertController.swift; sourceTree = "<group>"; };
+		C7EEB476218A662F0094412F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC7DC9EABE3DBA8545C5758 /* Pods_FenceItApp_FIT5140.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CFB80E354C0A61CFB27879 /* Pods_FenceItApp_FIT5140Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D72342F9FBBC03CF7DDFB0 /* Pods_FenceItApp_FIT5140UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45566E9943DCCCF2378EB664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30B7DA9AD34B09E5767CDE9F /* Pods_FenceItApp_FIT5140.framework */,
+				955DD2B1C1A20AE283F386AC /* Pods_FenceItApp_FIT5140Tests.framework */,
+				A178CA24E22EFD6BE63A7863 /* Pods_FenceItApp_FIT5140UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7208F8C2183396C004E90E9 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +122,8 @@
 				C7208FAC21833975004E90E9 /* FenceItApp_FIT5140Tests */,
 				C7208FB721833975004E90E9 /* FenceItApp_FIT5140UITests */,
 				C7208F962183396C004E90E9 /* Products */,
+				D825389260E01EBC8018DC19 /* Pods */,
+				45566E9943DCCCF2378EB664 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +140,20 @@
 		C7208F972183396C004E90E9 /* FenceItApp_FIT5140 */ = {
 			isa = PBXGroup;
 			children = (
+				C71B100C218AEB1100608AC8 /* AuthViewController.swift */,
 				C7208F982183396C004E90E9 /* AppDelegate.swift */,
-				C7208F9A2183396C004E90E9 /* ViewController.swift */,
 				C7208F9C2183396C004E90E9 /* Main.storyboard */,
 				C7208F9F21833975004E90E9 /* Assets.xcassets */,
 				C7208FA121833975004E90E9 /* LaunchScreen.storyboard */,
+				C7EEB476218A662F0094412F /* GoogleService-Info.plist */,
 				C7208FA421833975004E90E9 /* Info.plist */,
+				C76CFD8F218AFE5700C7D60B /* AlertViewController.swift */,
+				C76CFD91218B01CE00C7D60B /* Alert.swift */,
+				C76CFD93218B208100C7D60B /* DetailAlertController.swift */,
+				C70C3672218BA00000F6FCDC /* SettingsTableController.swift */,
+				C70C3674218BB54500F6FCDC /* AlertTableViewController.swift */,
+				C70C3678218BD3C000F6FCDC /* SwitchTableViewCell.swift */,
+				C70C3679218BD3C000F6FCDC /* SwitchTableViewCell.xib */,
 			);
 			path = FenceItApp_FIT5140;
 			sourceTree = "<group>";
@@ -125,6 +176,19 @@
 			path = FenceItApp_FIT5140UITests;
 			sourceTree = "<group>";
 		};
+		D825389260E01EBC8018DC19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B81948092FCB7686C6F3225F /* Pods-FenceItApp_FIT5140.debug.xcconfig */,
+				808967F47818135E7DC09F43 /* Pods-FenceItApp_FIT5140.release.xcconfig */,
+				0FEA7B7BADD1E46570C59686 /* Pods-FenceItApp_FIT5140Tests.debug.xcconfig */,
+				0CB338A10553B5696993A5BD /* Pods-FenceItApp_FIT5140Tests.release.xcconfig */,
+				0BAC1CE99A1FEB04FF38D685 /* Pods-FenceItApp_FIT5140UITests.debug.xcconfig */,
+				52F40F5C31F4032BC35D82C2 /* Pods-FenceItApp_FIT5140UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7208FBD21833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140" */;
 			buildPhases = (
+				A22B8DC9643AA409301A4038 /* [CP] Check Pods Manifest.lock */,
 				C7208F912183396C004E90E9 /* Sources */,
 				C7208F922183396C004E90E9 /* Frameworks */,
 				C7208F932183396C004E90E9 /* Resources */,
+				71D41FE4EAB5D8320BEDB0D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7208FC021833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140Tests" */;
 			buildPhases = (
+				D5727026DE954A0AD0667E2F /* [CP] Check Pods Manifest.lock */,
 				C7208FA521833975004E90E9 /* Sources */,
 				C7208FA621833975004E90E9 /* Frameworks */,
 				C7208FA721833975004E90E9 /* Resources */,
@@ -167,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7208FC321833975004E90E9 /* Build configuration list for PBXNativeTarget "FenceItApp_FIT5140UITests" */;
 			buildPhases = (
+				A4A4F027087745CE224B1D43 /* [CP] Check Pods Manifest.lock */,
 				C7208FB021833975004E90E9 /* Sources */,
 				C7208FB121833975004E90E9 /* Frameworks */,
 				C7208FB221833975004E90E9 /* Resources */,
@@ -230,8 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7208FA321833975004E90E9 /* LaunchScreen.storyboard in Resources */,
+				C70C367B218BD3C100F6FCDC /* SwitchTableViewCell.xib in Resources */,
 				C7208FA021833975004E90E9 /* Assets.xcassets in Resources */,
 				C7208F9E2183396C004E90E9 /* Main.storyboard in Resources */,
+				C7EEB477218A66380094412F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +321,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71D41FE4EAB5D8320BEDB0D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FenceItApp_FIT5140/Pods-FenceItApp_FIT5140-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FenceItApp_FIT5140/Pods-FenceItApp_FIT5140-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22B8DC9643AA409301A4038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenceItApp_FIT5140-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A4F027087745CE224B1D43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenceItApp_FIT5140UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5727026DE954A0AD0667E2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FenceItApp_FIT5140Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7208F912183396C004E90E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7208F9B2183396C004E90E9 /* ViewController.swift in Sources */,
+				C76CFD94218B208100C7D60B /* DetailAlertController.swift in Sources */,
+				C70C367A218BD3C000F6FCDC /* SwitchTableViewCell.swift in Sources */,
+				C70C3673218BA00000F6FCDC /* SettingsTableController.swift in Sources */,
+				C71B100D218AEB1100608AC8 /* AuthViewController.swift in Sources */,
+				C70C3675218BB54500F6FCDC /* AlertTableViewController.swift in Sources */,
+				C76CFD90218AFE5700C7D60B /* AlertViewController.swift in Sources */,
+				C76CFD92218B01CE00C7D60B /* Alert.swift in Sources */,
 				C7208F992183396C004E90E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +603,13 @@
 		};
 		C7208FBE21833975004E90E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81948092FCB7686C6F3225F /* Pods-FenceItApp_FIT5140.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL38CYJQKT;
 				INFOPLIST_FILE = FenceItApp_FIT5140/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +623,13 @@
 		};
 		C7208FBF21833975004E90E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808967F47818135E7DC09F43 /* Pods-FenceItApp_FIT5140.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL38CYJQKT;
 				INFOPLIST_FILE = FenceItApp_FIT5140/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +643,7 @@
 		};
 		C7208FC121833975004E90E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEA7B7BADD1E46570C59686 /* Pods-FenceItApp_FIT5140Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +665,7 @@
 		};
 		C7208FC221833975004E90E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB338A10553B5696993A5BD /* Pods-FenceItApp_FIT5140Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +687,7 @@
 		};
 		C7208FC421833975004E90E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BAC1CE99A1FEB04FF38D685 /* Pods-FenceItApp_FIT5140UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +708,7 @@
 		};
 		C7208FC521833975004E90E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F40F5C31F4032BC35D82C2 /* Pods-FenceItApp_FIT5140UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
