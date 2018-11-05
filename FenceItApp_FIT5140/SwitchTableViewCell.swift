@@ -34,7 +34,7 @@ class SwitchTableViewCell: UITableViewCell {
         
         if headerText.text == "Ultra Sonic Sensor"{
             var sensorRef = databaseRef.child("sensors")
-            Database.database().reference().child("sensors").child("1").setValue(["notify":self.settingOn.isOn])
+            Database.database().reference().child("sensors").child("1").updateChildValues(["notify":self.settingOn.isOn])
         }
         /*var handle = sensorRef.child("macid").observe(.value, with: { (snapshot) in
             
