@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class AuthViewController: UIViewController {
+class AuthViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -17,7 +17,10 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userField.delegate = self
+        passwordField.delegate = self
+        //Looks for single or multiple taps.
+        
         // Do any additional setup after loading the view.
     }
     
@@ -30,12 +33,11 @@ class AuthViewController: UIViewController {
         super.viewWillAppear(animated)
         handle = Auth.auth().addStateDidChangeListener(
             {auth, user in
-                if user != nil{
+                if user != nil {
                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 }
         })
     }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,8 +77,16 @@ class AuthViewController: UIViewController {
             (user, error) in
             if error != nil {
                 self.displayErrorMessage(error!.localizedDescription)
+                return
+            } else {
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                let pass = story.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+                
+                pass.getEmailUser = email
+                self.navigationController?.pushViewController(pass, animated: true)
             }
         }
+        
     }
     
     func displayErrorMessage(_ errorMessage: String) {
@@ -87,6 +97,28 @@ class AuthViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 
+    
+    func goBack(){
+        do{
+            try Auth.auth().signOut()
+            
+        }catch{
+            
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 

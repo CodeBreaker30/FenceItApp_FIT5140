@@ -14,12 +14,14 @@ public class Alert {
     public var idSensor: String
     public var icon: String
     public var sensorName : String
+    public var dateInt: Int64
     
-    init(date:String?,idSensor:String,icon:String,sensorName:String){
+    init(date:String?,idSensor:String,icon:String,sensorName:String,dateLong:Int64){
         self.dateTime = date
         self.idSensor = idSensor
         self.icon = icon
         self.sensorName = sensorName
+        self.dateInt = dateLong
     }
     
 }
