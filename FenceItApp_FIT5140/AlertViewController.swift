@@ -22,7 +22,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         super.viewDidLoad()
         
         self.navigationItem.title = "Alerts"
-        // Do any additional setup after loading the view.
+        // Validates user
         handle = Auth.auth().addStateDidChangeListener(
             {auth, user in
                 if user != nil {
@@ -48,6 +48,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         return recordList.count;
     }
 
+    // Render rows right after getting records from database
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "AlertCell",for: indexPath)
         let record: Alert = recordList[indexPath.row]//self.speciesList[indexPath.row]
@@ -101,6 +102,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         
     }
     
+    //Message when there's no issues
     func showOkMessage(){
         if recordList.count < 1 {
             let alertRecord = Alert(date: "No alerts, you are safe!!", idSensor: "", icon: "checked", sensorName: "No issues at home!!", dateLong: 0)
@@ -116,6 +118,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         }
     }
     
+    //Gets time stamp from a date string
     func getTimeStamp(date:String) -> Int{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -126,11 +129,13 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         return Int(dateOb!.timeIntervalSince1970)
     }
     
+    //Gets the name of the sensor
     func getNameOfSensor(idSensor:String) -> String{
         
         return "UltraSonic Sensor"
     }
     
+    //Takes the user to the detail screen page
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let story = UIStoryboard(name: "Main", bundle: nil)
         let pass = story.instantiateViewController(withIdentifier: "DetailAlertController") as! DetailAlertController
@@ -170,6 +175,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
             self.dismiss(animated: true, completion: nil)
     }
     
+    //Send email to user
     func sendEmail(alert:Alert) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
@@ -186,6 +192,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         
     }
     
+    //Connects with a third party web api to send an alert email to the user
     func sendNotification(alert:Alert){
         let body = "Issue detected at home at "+alert.dateTime!+" by sensor:"+alert.sensorName
         let subject = "[URG]FenceItApp Alert: Home can be at Risk"
@@ -205,6 +212,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         controller.dismiss(animated: true)
     }
     
+    //Gets the difference in minutes between 2 dates
     func getMinutesDiff(date:String) -> Bool{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -221,6 +229,7 @@ class AlertViewController: UITableViewController, MFMailComposeViewControllerDel
         return (components.minute!<2);
     }
     
+    //Gets day of the month from a date string
     func getDay(date:String) -> Int? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"

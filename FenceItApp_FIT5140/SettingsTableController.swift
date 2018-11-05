@@ -21,11 +21,7 @@ class SettingsTableController: UITableViewController, SwitchTableViewCellDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //Validates authentication and gets username
         handle = Auth.auth().addStateDidChangeListener(
             {auth, user in
                 if user != nil {
@@ -59,7 +55,7 @@ class SettingsTableController: UITableViewController, SwitchTableViewCellDelegat
         return sensorsList.count
     }
     
-    
+    // Render rows right after getting records from database
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath as IndexPath) as! SwitchTableViewCell
@@ -86,6 +82,7 @@ class SettingsTableController: UITableViewController, SwitchTableViewCellDelegat
         }
     }
     
+    //Create the obserser to check when a new row arrives.
     func getSensorsByUser(){
         databaseRef = Database.database().reference().child("sensors")
         var data = [(x:0,y:0.0)]

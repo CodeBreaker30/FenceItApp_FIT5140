@@ -21,13 +21,17 @@ class GraphContViewController: UIViewController, ChartDelegate {
     var labels: [Int] = []
     var points2: [Double] = []
     var labels2: [Int] = []
+    var currentUser: String = ""
+    var sensorsList: [String] = []
     
     override func viewDidLoad() {
         self.navigationItem.title = "Monthly Report"
         chart.delegate = self
-        getStatisticsFromUser()
+        getSensorsByUser()
+        //getStatisticsFromUser()
     }
     
+    //Gets alerts from a user and renders a graph
     func getStatisticsFromUser(){
         databaseRef = Database.database().reference().child("alerts")
         var data = [(x:0,y:0.0)]
@@ -46,7 +50,7 @@ class GraphContViewController: UIViewController, ChartDelegate {
                     let sensorName = self.getNameOfSensor(idSensor: (idSensor)!)
                     let icon = "warning-1"
                     let alertRecord = Alert(date: String(date!), idSensor: (idSensor?.description)!, icon: icon, sensorName: sensorName, dateLong: 0)
-                    
+                    if !self.sensorsList.contains(idSensor!) {continue}
                     if self.labels.contains(day!){
                         let indx = self.labels.firstIndex(of:day!)
                         self.points[indx!] = self.points[indx!] + 1.0
@@ -90,6 +94,7 @@ class GraphContViewController: UIViewController, ChartDelegate {
         }
     }
     
+    // Gets the day of the month from a date string
     func getDay(date:String) -> Int? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -101,7 +106,7 @@ class GraphContViewController: UIViewController, ChartDelegate {
         let component = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: dateOb!)
         return component.day!;
     }
-    
+    // Gets the hour of the day from a date string
     func getHour(date:String) -> Int? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
@@ -158,11 +163,38 @@ class GraphContViewController: UIViewController, ChartDelegate {
         super.viewWillDisappear(animated)
         
         do{
-            try Auth.auth().signOut()
+            //try Auth.auth().signOut()
             
         }catch{
             
         }
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func getSensorsByUser(){
+        databaseRef = Database.database().reference().child("sensors")
+        var data = [(x:0,y:0.0)]
+        databaseRef.observeSingleEvent(of: .value){ (snapshot) -> Void in
+            //if the reference have some values
+            self.currentUser = Auth.auth().currentUser!.email!
+            if snapshot.childrenCount > 0 {
+                //iterating through all the values
+                for lecture in snapshot.children.allObjects as! [DataSnapshot] {
+                    guard let record = lecture.value as? [String: Any] else { continue }
+                    let macid = record["macid"] as? String
+                    let feature = record["feature"] as? String
+                    let description = record["description"] as? String
+                    let user = record["users"] as? String
+                    let notify = record["notify"] as? Bool
+                    let icon = "adjust"
+                    if(user == self.currentUser){
+                        let sensorRecord = Sensor(macid: macid, feature: feature!, description: description!, user: user!, notify: notify!)
+                        self.sensorsList.append(macid!)
+                    }
+                }
+                
+                self.getStatisticsFromUser()
+            }
+        }
     }
 }

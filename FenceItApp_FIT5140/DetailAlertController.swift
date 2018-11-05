@@ -20,10 +20,10 @@ class DetailAlertController: UIViewController {
         super.viewDidLoad()
         labelDate.text = getDate
         labelSensor.text = getSensorName + " - " + getSensorId
-        // Do any additional setup after loading the view.
+        // Variables were gotten from previous controller
     }
     
-    
+    //Calls to triple 0 when hitted
     @IBAction func CallEmergency(_ sender: Any) {
         UIApplication.shared.openURL(NSURL(string: "tel://000") as! URL)
     }

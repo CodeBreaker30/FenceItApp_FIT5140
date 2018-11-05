@@ -21,6 +21,7 @@ class SwitchTableViewCell: UITableViewCell {
     @IBOutlet weak var subtitleText: UILabel!
     var databaseRef = DatabaseReference()
     
+    //Validates when a switch button changes its value
     @IBAction func switchValueChanged(_ sender: Any) {
         
         if headerText.text == "Push Notifications" {
